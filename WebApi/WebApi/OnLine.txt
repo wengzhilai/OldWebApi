@@ -1,0 +1,1 @@
+﻿[{"loginHistoryId":0,"Guid":"d975e07321f047fda0bcb8f83830e1bc","UserId":1,"DistrictId":1,"DistrictCode":"1","LevelId":0,"Region":"1","UserName":"翁志来","LoginName":"18180770313","RoleID":[],"RegionList":["1"],"RuleRegionStr":"'1'","LastOpTime":"2017-06-09 00:03:20"}]

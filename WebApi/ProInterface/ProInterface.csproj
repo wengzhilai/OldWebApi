@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A28BC73-C3FB-47A3-8039-C12F2008F0CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProInterface</RootNamespace>
+    <AssemblyName>ProInterface</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ProInterface.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Framework\AppSet.cs" />
+    <Compile Include="Framework\Default\IZ_Bulletin.cs" />
+    <Compile Include="Framework\Default\IZ_BulletinReview.cs" />
+    <Compile Include="Framework\Default\IZ_BulletinType.cs" />
+    <Compile Include="Framework\Default\IZ_Config.cs" />
+    <Compile Include="Framework\Default\IZ_DataDown.cs" />
+    <Compile Include="Framework\Default\IZ_DataDownEvent.cs" />
+    <Compile Include="Framework\Default\IZ_DataDownTask.cs" />
+    <Compile Include="Framework\Default\IZ_DbServer.cs" />
+    <Compile Include="Framework\Default\IZ_DbServerType.cs" />
+    <Compile Include="Framework\Default\IZ_District.cs" />
+    <Compile Include="Framework\Default\IZ_Files.cs" />
+    <Compile Include="Framework\Default\IZ_Login.cs" />
+    <Compile Include="Framework\Default\IZ_Message.cs" />
+    <Compile Include="Framework\Default\IZ_Module.cs" />
+    <Compile Include="Framework\Default\IZ_Query.cs" />
+    <Compile Include="Framework\Default\IZ_Role.cs" />
+    <Compile Include="Framework\Default\IZ_Script.cs" />
+    <Compile Include="Framework\Default\IZ_ScriptTask.cs" />
+    <Compile Include="Framework\Default\IZ_ScriptTaskLog.cs" />
+    <Compile Include="Framework\Default\IZ_SmsSend.cs" />
+    <Compile Include="Framework\Default\IZ_User.cs" />
+    <Compile Include="Framework\ErrorInfo.cs" />
+    <Compile Include="Framework\GlobalUser.cs" />
+    <Compile Include="Framework\IBulletin.cs" />
+    <Compile Include="Framework\IBulletinReview.cs" />
+    <Compile Include="Framework\IChart.cs" />
+    <Compile Include="Framework\IConfig.cs" />
+    <Compile Include="Framework\IDataDown.cs" />
+    <Compile Include="Framework\IDbServer.cs" />
+    <Compile Include="Framework\IDistrict.cs" />
+    <Compile Include="Framework\IExecute.cs" />
+    <Compile Include="Framework\IFiles.cs" />
+    <Compile Include="Framework\IFlow.cs" />
+    <Compile Include="Framework\ILogin.cs" />
+    <Compile Include="Framework\IModule.cs" />
+    <Compile Include="Framework\IQuery.cs" />
+    <Compile Include="Framework\IRole.cs" />
+    <Compile Include="Framework\IScript.cs" />
+    <Compile Include="Framework\IScriptTask.cs" />
+    <Compile Include="Framework\ISmsSend.cs" />
+    <Compile Include="Framework\ITask.cs" />
+    <Compile Include="Framework\ITaskFlow.cs" />
+    <Compile Include="Framework\IUser.cs" />
+    <Compile Include="Framework\IUserMessage.cs" />
+    <Compile Include="Framework\JSON.cs" />
+    <Compile Include="Framework\Models\BULLETIN.cs" />
+    <Compile Include="Framework\Models\BulletinReview.cs" />
+    <Compile Include="Framework\Models\BULLETIN_REVIEW.cs" />
+    <Compile Include="Framework\Models\BULLETIN_TYPE.cs" />
+    <Compile Include="Framework\Models\CONFIG.cs" />
+    <Compile Include="Framework\Models\DataDown.cs" />
+    <Compile Include="Framework\Models\DataGridColumns.cs" />
+    <Compile Include="Framework\Models\DATA_DOWN.cs" />
+    <Compile Include="Framework\Models\DATA_DOWN_EVENT.cs" />
+    <Compile Include="Framework\Models\DATA_DOWN_TASK.cs" />
+    <Compile Include="Framework\Models\DATA_DOWN_TO.cs" />
+    <Compile Include="Framework\Models\DB_SERVER.cs" />
+    <Compile Include="Framework\Models\DB_SERVER_TYPE.cs" />
+    <Compile Include="Framework\Models\DISTRICT.cs" />
+    <Compile Include="Framework\Models\FCMultiSeries.cs" />
+    <Compile Include="Framework\Models\FCSingleSeries.cs" />
+    <Compile Include="Framework\Models\FILES.cs" />
+    <Compile Include="Framework\Models\Flow.cs" />
+    <Compile Include="Framework\Models\FLOW_FLOWNODE.cs" />
+    <Compile Include="Framework\Models\FLOW_FLOWNODE_FLOW.cs" />
+    <Compile Include="Framework\Models\IdText.cs" />
+    <Compile Include="Framework\Models\XYZ.cs" />
+    <Compile Include="Framework\Models\KTV.cs" />
+    <Compile Include="Framework\Models\KV.cs" />
+    <Compile Include="Framework\Models\LOGIN.cs" />
+    <Compile Include="Framework\Models\MESSAGE.cs" />
+    <Compile Include="Framework\Models\MESSAGE_TYPE.cs" />
+    <Compile Include="Framework\Models\MODULE.cs" />
+    <Compile Include="Framework\Models\OAUTH.cs" />
+    <Compile Include="Framework\Models\QuartzRunStatus.cs" />
+    <Compile Include="Framework\Models\QUERY.cs" />
+    <Compile Include="Framework\Models\ROLE.cs" />
+    <Compile Include="Framework\Models\ROLE_CONFIG.cs" />
+    <Compile Include="Framework\Models\SCRIPT.cs" />
+    <Compile Include="Framework\Models\SCRIPT_GROUP_LIST.cs" />
+    <Compile Include="Framework\Models\SCRIPT_TASK.cs" />
+    <Compile Include="Framework\Models\SCRIPT_TASK_LOG.cs" />
+    <Compile Include="Framework\Models\SMS_SEND.cs" />
+    <Compile Include="Framework\Models\TableFiled.cs" />
+    <Compile Include="Framework\Models\TASK.cs" />
+    <Compile Include="Framework\Models\TASK_FLOW.cs" />
+    <Compile Include="Framework\Models\TASK_FLOW_HANDLE.cs" />
+    <Compile Include="Framework\Models\TBulletin.cs" />
+    <Compile Include="Framework\Models\TFlow.cs" />
+    <Compile Include="Framework\Models\TFlowFlownodeFlow.cs" />
+    <Compile Include="Framework\Models\TModule.cs" />
+    <Compile Include="Framework\Models\TNode.cs" />
+    <Compile Include="Framework\Models\TNodeFlow.cs" />
+    <Compile Include="Framework\Models\TQuery.cs" />
+    <Compile Include="Framework\Models\TreeClass.cs" />
+    <Compile Include="Framework\Models\TreeData.cs" />
+    <Compile Include="Framework\Models\TRole.cs" />
+    <Compile Include="Framework\Models\TScript.cs" />
+    <Compile Include="Framework\Models\TTask.cs" />
+    <Compile Include="Framework\Models\TTaskFlow.cs" />
+    <Compile Include="Framework\Models\TTaskFlowHandle.cs" />
+    <Compile Include="Framework\Models\TUser.cs" />
+    <Compile Include="Framework\Models\TUserMessage.cs" />
+    <Compile Include="Framework\Models\USER.cs" />
+    <Compile Include="Framework\Models\USER_MESSAGE.cs" />
+    <Compile Include="Framework\StatusType.cs" />
+    <Compile Include="IUserInfoApi.cs" />
+    <Compile Include="IPublicApi.cs" />
+    <Compile Include="IRoleApi.cs" />
+    <Compile Include="IUpdataLog.cs" />
+    <Compile Include="IUserApi.cs" />
+    <Compile Include="IWeixinApi.cs" />
+    <Compile Include="IFamilyApi.cs" />
+    <Compile Include="Models\ApiLogingBean.cs" />
+    <Compile Include="Models\ApiPagingDataBean.cs" />
+    <Compile Include="Models\ApiRequesEntityBean.cs" />
+    <Compile Include="Models\ApiRequesPageBean.cs" />
+    <Compile Include="Models\ApiRequesSaveEntityBean.cs" />
+    <Compile Include="Models\ApiWeiXinJSSDKBean.cs" />
+    <Compile Include="Models\ApiWeixinPayBean.cs" />
+    <Compile Include="Models\FaUserInfo.cs" />
+    <Compile Include="Models\FaUserInfoRelative.cs" />
+    <Compile Include="Models\FaUserInfoRelativeItem.cs" />
+    <Compile Include="Models\FA_ELDER.cs" />
+    <Compile Include="Models\FA_FAMILY.cs" />
+    <Compile Include="Models\FA_UPDATA_LOG.cs" />
+    <Compile Include="Models\FA_USER_EVENT.cs" />
+    <Compile Include="Models\FA_USER_INFO.cs" />
+    <Compile Include="Models\SelectListItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

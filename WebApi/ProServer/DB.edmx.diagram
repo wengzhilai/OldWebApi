@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1b76df2b4c5849e3b66626deb6c0fb82" Name="Diagram1">
+        <EntityTypeShape EntityType="faModel.fa_app_version" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="faModel.fa_bulletin" Width="1.5" PointX="0.75" PointY="11.875" />
+        <EntityTypeShape EntityType="faModel.fa_bulletin_log" Width="1.5" PointX="3" PointY="14.75" />
+        <EntityTypeShape EntityType="faModel.fa_bulletin_review" Width="1.5" PointX="3" PointY="21" />
+        <EntityTypeShape EntityType="faModel.fa_bulletin_type" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="faModel.fa_config" Width="1.5" PointX="15.75" PointY="5.75" />
+        <EntityTypeShape EntityType="faModel.fa_db_server" Width="1.5" PointX="20" PointY="1" />
+        <EntityTypeShape EntityType="faModel.fa_db_server_type" Width="1.5" PointX="17.75" PointY="1.875" />
+        <EntityTypeShape EntityType="faModel.fa_district" Width="1.5" PointX="6" PointY="16.5" />
+        <EntityTypeShape EntityType="faModel.fa_dynasty" Width="1.5" PointX="2.75" PointY="17.75" />
+        <EntityTypeShape EntityType="faModel.fa_elder" Width="1.5" PointX="8.25" PointY="25" />
+        <EntityTypeShape EntityType="faModel.fa_export_log" Width="1.5" PointX="17.75" PointY="5.75" />
+        <EntityTypeShape EntityType="faModel.fa_family" Width="1.5" PointX="6" PointY="25.125" />
+        <EntityTypeShape EntityType="faModel.fa_files" Width="1.5" PointX="6" PointY="12.5" />
+        <EntityTypeShape EntityType="faModel.fa_flow" Width="1.5" PointX="3" PointY="6.625" />
+        <EntityTypeShape EntityType="faModel.fa_flow_flownode" Width="1.5" PointX="3" PointY="3.625" />
+        <EntityTypeShape EntityType="faModel.fa_flow_flownode_flow" Width="1.5" PointX="5.25" PointY="8.5" />
+        <EntityTypeShape EntityType="faModel.fa_function" Width="1.5" PointX="0.75" PointY="17" />
+        <EntityTypeShape EntityType="faModel.fa_log" Width="1.5" PointX="17.75" PointY="13.75" />
+        <EntityTypeShape EntityType="faModel.fa_login" Width="1.5" PointX="12.75" PointY="15" />
+        <EntityTypeShape EntityType="faModel.fa_login_history" Width="1.5" PointX="17.75" PointY="16.75" />
+        <EntityTypeShape EntityType="faModel.fa_message" Width="1.5" PointX="17" PointY="9" />
+        <EntityTypeShape EntityType="faModel.fa_message_type" Width="1.5" PointX="14.75" PointY="9.625" />
+        <EntityTypeShape EntityType="faModel.fa_module" Width="1.5" PointX="0.75" PointY="6.5" />
+        <EntityTypeShape EntityType="faModel.fa_oauth" Width="1.5" PointX="15" PointY="15.625" />
+        <EntityTypeShape EntityType="faModel.fa_query" Width="1.5" PointX="6" PointY="2.625" />
+        <EntityTypeShape EntityType="faModel.fa_role" Width="1.5" PointX="3" PointY="10.625" />
+        <EntityTypeShape EntityType="faModel.fa_role_config" Width="1.5" PointX="5.25" PointY="22.125" />
+        <EntityTypeShape EntityType="faModel.fa_role_query_authority" Width="1.5" PointX="8.25" PointY="7.125" />
+        <EntityTypeShape EntityType="faModel.fa_script" Width="1.5" PointX="10.75" PointY="2.75" />
+        <EntityTypeShape EntityType="faModel.fa_script_group_list" Width="1.5" PointX="13" PointY="6.25" />
+        <EntityTypeShape EntityType="faModel.fa_script_task" Width="1.5" PointX="13" PointY="1.125" />
+        <EntityTypeShape EntityType="faModel.fa_script_task_log" Width="1.5" PointX="15.25" PointY="2.25" />
+        <EntityTypeShape EntityType="faModel.fa_sms_send" Width="1.5" PointX="8.75" PointY="18.75" />
+        <EntityTypeShape EntityType="faModel.fa_task" Width="1.5" PointX="3.75" PointY="28.125" />
+        <EntityTypeShape EntityType="faModel.fa_task_flow" Width="1.5" PointX="6" PointY="27.625" />
+        <EntityTypeShape EntityType="faModel.fa_task_flow_handle" Width="1.5" PointX="8.25" PointY="14.875" />
+        <EntityTypeShape EntityType="faModel.fa_task_flow_handle_user" Width="1.5" PointX="8.25" PointY="29.25" />
+        <EntityTypeShape EntityType="faModel.fa_user" Width="1.5" PointX="8.25" PointY="9.875" />
+        <EntityTypeShape EntityType="faModel.fa_user_event" Width="1.5" PointX="12.75" PointY="10.875" />
+        <EntityTypeShape EntityType="faModel.fa_user_info" Width="1.5" PointX="10.5" PointY="9.625" />
+        <EntityTypeShape EntityType="faModel.fa_user_message" Width="1.5" PointX="19.25" PointY="9.5" />
+        <AssociationConnector Association="faModel.FK_BULLETIN_LOG_REF_BULLETIN" />
+        <AssociationConnector Association="faModel.FK_FA_BULLETIN_REVIEW_REF_BULL" />
+        <AssociationConnector Association="faModel.FK_FA_BULLETIN_RE_REF_REVIEW" />
+        <AssociationConnector Association="faModel.FK_FA_DB_SERVER_REF_TYPE" />
+        <AssociationConnector Association="faModel.FK_FA_DISTRICT_REF_DISTRICT" />
+        <AssociationConnector Association="faModel.FK_FA_USER_REF_DISTRICT" />
+        <AssociationConnector Association="faModel.FK_FA_ELDER_REF_FAMILY" />
+        <AssociationConnector Association="faModel.FK_FA_USER_REF_ELDER1" />
+        <AssociationConnector Association="faModel.FK_FA_USER_REF_FAMILY" />
+        <AssociationConnector Association="faModel.FK_FA_FLOW_TASK_REF_FLOW" />
+        <AssociationConnector Association="faModel.FK_FA_FLOWNODE_FLOW_REF_FLOW" />
+        <AssociationConnector Association="faModel.FK_FA_FLOWNODE_FLOW_REF_NODE" />
+        <AssociationConnector Association="faModel.FK_FA_MESSAGE_REF_MESSAGE_TYPE" />
+        <AssociationConnector Association="faModel.FK_FA_USER_MESSAGE_REF_MESSAGE" />
+        <AssociationConnector Association="faModel.FK_FA_MODULE_REF_MODULE" />
+        <AssociationConnector Association="faModel.FK_FA_ROLE_QUERY_REF_QUERY" />
+        <AssociationConnector Association="faModel.FK_FA_ROLE_CONFIG_REF_ROLE" />
+        <AssociationConnector Association="faModel.FK_FA_ROLE_QUERY_REF_ROLE" />
+        <AssociationConnector Association="faModel.FK_FA_GROUP_LIST_REF_SCRIPT" />
+        <AssociationConnector Association="faModel.FK_FA_SCRIPT_TASK_REF_SCRIPT" />
+        <AssociationConnector Association="faModel.FK_FA_SCRIPT_TASK_LOG_REF_TASK" />
+        <AssociationConnector Association="faModel.FK_FA_TASK_FLOW_REF_TASK" />
+        <AssociationConnector Association="faModel.FK_FA_TASK_FLOW_REF_TASK_FLOW" />
+        <AssociationConnector Association="faModel.FK_TASK_FLOW_HANDLE_REF_FLOW" />
+        <AssociationConnector Association="faModel.FK_TASK_HANDEL_USER_REF_FLOW" />
+        <AssociationConnector Association="faModel.FK_FA_USER_INFO_REF_USER" />
+        <AssociationConnector Association="faModel.FK_FA_USER_EVENT_REF_USER" />
+        <AssociationConnector Association="faModel.FK_USER_INFO_REF_USER_INFO" />
+        <AssociationConnector Association="faModel.fa_bulletin_file" />
+        <AssociationConnector Association="faModel.fa_bulletin_role" />
+        <AssociationConnector Association="faModel.fa_event_files" />
+        <AssociationConnector Association="faModel.fa_flow_flownode_role" />
+        <AssociationConnector Association="faModel.fa_oauth_login" />
+        <AssociationConnector Association="faModel.fa_role_function" />
+        <AssociationConnector Association="faModel.fa_role_module" />
+        <AssociationConnector Association="faModel.fa_task_flow_handle_files" />
+        <AssociationConnector Association="faModel.fa_user_district" />
+        <AssociationConnector Association="faModel.fa_user_friend" />
+        <AssociationConnector Association="faModel.fa_user_module" />
+        <AssociationConnector Association="faModel.fa_user_role" />
+        <EntityTypeShape EntityType="faModel.fa_updata_log" Width="1.5" PointX="11.375" PointY="19.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
